@@ -1,12 +1,12 @@
-vyruchka = float(input('Введите значение выручки = '))
-izderzhki = float(input('Введите значение издержек = '))
-if vyruchka >= izderzhki:
-    pribyl = vyruchka - izderzhki
-    print('Прибыль равна = ', pribyl)
-    rentabel = pribyl / vyruchka
+revenue = float(input('Введите значение выручки = '))
+costs = float(input('Введите значение издержек = '))
+if revenue >= costs:
+    profit = revenue - costs
+    print('Прибыль равна = ', profit)
+    rentabel = profit / revenue
     personal = int(input('Введите численность персонала фирмы = '))
-    pribyl_1 = pribyl / personal
-    print('Прибыль на одного сотрудника равна = ', pribyl_1)
+    profit_1 = profit / personal
+    print('Прибыль на одного сотрудника равна = ', "%.2f" % profit_1)
 else:
-    ubytok = izderzhki - vyruchka
-    print('Убыток равен = ', ubytok)
+    loss = costs - revenue
+    print('Убыток равен = ', loss)

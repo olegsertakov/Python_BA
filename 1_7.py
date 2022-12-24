@@ -3,8 +3,8 @@ b = float(input('Введите значение конечного резуль
 date = 1
 print('Результат')
 while a < b:
-    print(date, '-й день:', a)
+    print(f"{date}-й день: {a}")
     a = a * 1.1
     date = date + 1
-print(date, '-й день:', a)
+print(date, '-й день:', "{:.2f}".format(a))
 print('Ответ: на', date, '-й день спортсмен достиг результата — не менее', b, ' км.')
