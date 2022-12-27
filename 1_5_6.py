@@ -1,6 +1,6 @@
 revenue = float(input('Введите значение выручки = '))
 costs = float(input('Введите значение издержек = '))
-if revenue >= costs:
+if revenue > costs:
     profit = revenue - costs
     print('Прибыль равна = ', profit)
     profitability = (profit / revenue) * 100
@@ -8,6 +8,9 @@ if revenue >= costs:
     personal = int(input('Введите численность персонала фирмы = '))
     profit_1 = profit / personal
     print('Прибыль на одного сотрудника равна = ', "%.2f" % profit_1)
-else:
+elif revenue < costs:
     loss = costs - revenue
     print('Убыток равен = ', loss)
+elif revenue == costs:
+    print('Выручка = Издержкам')
+
